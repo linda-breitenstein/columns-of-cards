@@ -23,13 +23,23 @@ section {
   flex-wrap: nowrap;
   padding: .75rem;
   border-left: 1px solid #000;
+}
 
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 0;
 }
 
 .text {
   text-align: left;
   flex-direction: column;
   align-items: stretch;
+  font-size: .875rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .image {
@@ -43,11 +53,11 @@ section {
 }
 
 .card {
-  background-color: #f2f2f2;
+  background-color: #e2e2e2;
 }
 
 .card-two {
-  background-color: #e2e2e2;
+  background-color: #ccc;
 }
 
 .card-three {
@@ -61,7 +71,7 @@ section {
 .btn {
   font-size: .875rem;
   color: #f2f2f2;
-  padding: .75rem;
+  padding: .25rem;
   border-radius: 8px;
   text-decoration: none;
   display: block;
