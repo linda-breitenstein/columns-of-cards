@@ -1,55 +1,74 @@
 html {
   box-sizing: border-box;
-  font: normal 100%/1.5 Open Sans;
+  font: normal 100%/1.5 "Open Sans";
   background: #fff;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
 body {
-  margin: 1rem;
+  margin: 0;
+  padding: 1.75rem;
 }
+
 header {
   text-align: center;
   display: block;
 }
 
 main {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
 }
 
 section {
-  flex-wrap: nowrap;
   padding: .75rem;
   border-left: 1px solid #000;
+  width: 25%;
+  height: 24em;
 }
 
 h1 {
   font-size: 2rem;
+  margin-top: 0;
 }
 
-p {
+h2 {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+h3 {
   margin: 0;
 }
 
 .text {
   text-align: left;
-  flex-direction: column;
-  align-items: stretch;
-  font-size: .875rem;
-  margin-top: 1rem;
+  display: block;
+  margin-top: 1.25rem;
   margin-bottom: 1rem;
+}
+
+i {
+  font-size: .875rem;
+}
+
+p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 .image {
   width: 100px;
   margin: auto;
-}
-
-.img-flex{
-  display: block;
-  width: 100%;
 }
 
 .card {
@@ -63,17 +82,44 @@ p {
 .card-three {
   background-color: #aaa;
 }
+
 .card-four {
   background-color: #999;
   border-right: 1px solid #000;
 }
 
 .btn {
-  font-size: .875rem;
   color: #f2f2f2;
+  display: block;
+  background-color: #333;
+  margin-top: auto;
+}
+
+.btn-small {
+  font-size: .875rem;
   padding: .25rem;
   border-radius: 8px;
   text-decoration: none;
   display: block;
   background-color: #333;
+  margin-top: auto;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+main section:first-child div.btn {
+  align-items: flex-end;
+  flex-grow: 2;
+}
+
+.card-2 {
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+.card div.btn,
+.card-three div.btn {
+  margin-top: 3em;
 }
